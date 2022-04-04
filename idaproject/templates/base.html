@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html> 
+<html lang="en">          
+  <head>
+      <title>Idagram</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  </head>
+  <body>       
+    {% include 'includes/header.html' %}
+    {% block content %}
+      Контент не подвезли :(
+    {% endblock %}
+    {% include 'includes/footer.html' %} 
+  </body>
+</html> 

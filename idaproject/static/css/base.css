@@ -1,0 +1,26 @@
+* {
+    color: rgb(0, 197, 16);
+    font-size: 20px;
+    font-family: courier;
+}
+
+div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+body {
+    background-color: rgba(0,0,0,0.97);
+}
+
+#image-link-container {
+    padding: 1em;
+    margin: 1em auto;
+    border: 2px solid rgb(0, 197, 16);
+}
+
+#header-container {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

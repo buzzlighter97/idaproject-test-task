@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="images-list-container">
+        {% if images_list %}
+            {% for image in images_list %}
+                <div id='image-link-container'>
+                    <div id="image-link">
+                        <div>id: {{ image.id }}</div>
+                        <a href={{ image.picture }}>{{ image.name }}</a>
+                        <div>size: {{ image.width }}px x {{ image.height }}px</div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div>
+                Oops! There are no images yet...
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

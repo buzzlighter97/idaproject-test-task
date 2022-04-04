@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if is_added %}
+        <div>
+            Image successfully added!
+        </div>
+    {% endif %}
+    <div id='add-form'>
+        <form action=''>
+            {{form}}
+            <input type='submit' value='Submit'>
+        </form>
+    </div>
+{% endblock content %}
